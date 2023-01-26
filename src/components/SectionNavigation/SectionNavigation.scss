@@ -1,0 +1,25 @@
+.section-navigation {
+  color: teal;
+  display: flex;
+  justify-content: space-between;
+
+  &__logo {
+    color: red;
+  }
+
+  &__menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__option {
+    &:hover {
+      cursor: pointer;
+      color: cyan;
+    }
+  }
+}
