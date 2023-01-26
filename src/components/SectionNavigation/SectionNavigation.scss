@@ -2,9 +2,15 @@
   color: teal;
   display: flex;
   justify-content: space-between;
+  background-color: #87c29b;
+  padding: 15px;
 
   &__logo {
-    color: red;
+    color: #fff;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   &__menu {
