@@ -1,6 +1,6 @@
 import React from "react";
-import "./SectionHero.scss";
 import Card from "../Card";
+import "./SectionHero.scss";
 
 export default function SectionHero() {
   const newArr = [1, 2, 3, 4, 5];
@@ -13,8 +13,8 @@ export default function SectionHero() {
           <button className="section-hero__input-button">Go!</button>
         </div>
         <div className="section-hero__cards">
-          {newArr.map((item) => (
-            <Card>{item}</Card>
+          {newArr.map((item, i) => (
+            <Card key={i}>{item}</Card>
           ))}
         </div>
       </section>
