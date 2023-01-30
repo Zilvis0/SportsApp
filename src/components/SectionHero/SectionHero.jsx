@@ -3,7 +3,7 @@ import Card from "../Card";
 import "./SectionHero.scss";
 
 export default function SectionHero() {
-  const newArr = [1, 2, 3, 4, 5];
+  const newArr = [1, 2, 3, 4, "Test"];
   return (
     <div className="section-hero__wrapper">
       <section className="section-hero">
