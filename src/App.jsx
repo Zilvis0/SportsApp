@@ -1,6 +1,6 @@
 import "./App.scss";
-import SectionHero from "./components/SectionHero";
 import SectionNavigation from "./components/SectionNavigation";
+import SectionHero from "./components/SectionHero";
 
 function App() {
   return (
