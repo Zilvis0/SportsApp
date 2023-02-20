@@ -50,9 +50,14 @@
   &__cards {
     display: flex;
     width: 100%;
-    padding: 100px 0;
     gap: 25px;
     background-color: rgba(133, 94, 66, 0.2);
-    // opacity: 5%;
   }
+}
+
+.section-hero__cards:hover .card__wrapper {
+  opacity: 0.25;
+}
+.section-hero__cards .card__wrapper:hover {
+  opacity: 1;
 }

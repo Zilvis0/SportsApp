@@ -5,18 +5,14 @@
 
   &__wrapper {
     overflow: hidden;
-    flex: 1;
     display: flex;
-    justify-content: center;
-    width: 100%;
-    background-size: 100% auto;
-    background-image: url(../../assets/random-exercise.png);
-    background-repeat: no-repeat;
-    background-position: top;
-    transition: all 0.8s ease-in-out;
-    height: 25vh;
+    flex-direction: column;
+    justify-content: space-around;
+    aspect-ratio: 1/2;
+    flex-grow: 1;
+    transition: all 0.2s ease-in-out;
+    padding: 10px;
     &:hover {
-      flex: 5;
       cursor: pointer;
     }
   }

@@ -8,7 +8,10 @@ export default function SectionHero() {
     <div className="section-hero__wrapper">
       <section className="section-hero">
         <div className="section-hero__input-wrapper">
-          <div className="section-hero__input-svg">SVG</div>
+          <img
+            src="./src/assets/logo.svg"
+            className="section-hero__input-svg"
+          ></img>
           <input className="section-hero__input" placeholder="Search"></input>
           <button className="section-hero__input-button">Go!</button>
         </div>

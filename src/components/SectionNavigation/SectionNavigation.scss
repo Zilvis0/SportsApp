@@ -6,9 +6,11 @@
   padding: 15px;
 
   &__logo {
-    color: #fff;
+    display: flex;
+    color: teal;
 
     &:hover {
+      text-shadow: 2px 2px 2px rgba(108, 29, 136, 0.6);
       cursor: pointer;
     }
   }
