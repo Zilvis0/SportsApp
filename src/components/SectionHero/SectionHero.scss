@@ -49,8 +49,8 @@
 
   &__cards {
     display: flex;
+    flex-flow: wrap;
     width: 100%;
-    gap: 25px;
     background-color: rgba(133, 94, 66, 0.2);
   }
 }
