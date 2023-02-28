@@ -1,16 +1,17 @@
 .section-navigation {
-  color: teal;
+  color: #0b132b;
   display: flex;
   justify-content: space-between;
-  background-color: #87c29b;
+  background-color: #fcb97d;
+  border-radius: 15px;
   padding: 15px;
 
   &__logo {
     display: flex;
-    color: teal;
+    color: #0b132b;
 
     &:hover {
-      text-shadow: 2px 2px 2px rgba(108, 29, 136, 0.6);
+      text-shadow: 2px 2px 2px #fff;
       cursor: pointer;
     }
   }
@@ -27,7 +28,7 @@
   &__option {
     &:hover {
       cursor: pointer;
-      color: cyan;
+      color: #fff;
     }
   }
 }

@@ -33,7 +33,15 @@ export default function SectionHero() {
   //   });
   // }, [search]);
 
-  const newArr = [1, 2, 3, 4, "Test", 1, 2, 3, 4, "Test"];
+  const newArr = [
+    "cardio",
+    "olympic_weightlifting",
+    "plyometrics",
+    "powerlifting",
+    "strength",
+    "stretching",
+    "strongman",
+  ];
   return (
     <div className="section-hero__wrapper">
       <section className="section-hero">
