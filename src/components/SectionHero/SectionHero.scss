@@ -49,9 +49,12 @@
 
   &__cards {
     display: flex;
-    flex-flow: wrap;
+    overflow: auto;
+    overflow-y: hidden;
     width: 100%;
     background-color: rgba(133, 94, 66, 0.2);
+    gap: 10px;
+    padding-left: 10px;
   }
 }
 
