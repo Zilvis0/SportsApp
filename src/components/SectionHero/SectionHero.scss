@@ -53,12 +53,14 @@
     overflow: auto;
     overflow-y: hidden;
     width: 100%;
-    background-color: rgba(133, 94, 66, 0.2);
+    background-color: var(--secondary-color);
     gap: 10px;
     padding-left: 10px;
+    border-radius: 10px 10px 5px 5px;
 
     &::-webkit-scrollbar {
-      width: 5px;
+      height: 5px;
+      width: 50%;
     }
     &::-webkit-scrollbar-thumb {
       background: var(--accent-color);
@@ -80,4 +82,9 @@
 }
 .section-hero__cards .card__wrapper:hover {
   opacity: 1;
+}
+.section-hero__cards .card__wrapper:hover {
+  .card {
+    color: #fff;
+  }
 }
