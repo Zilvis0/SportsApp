@@ -8,6 +8,16 @@ export default function Card({ children }) {
     return firstLetter + remainingLetters;
   };
 
+  const exercises = {
+    Cardio: "./src/assets/cardio.jpg",
+    "Olympic weightlifting": "./src/assets/olympic_weightlifting.jpg",
+    Plyometrics: "./src/assets/plyometrics.jpg",
+    Powerlifting: "./src/assets/powerlifting.jpg",
+    Strength: "./src/assets/strength.jpg",
+    Stretching: "./src/assets/stretching.jpg",
+    Strongman: "./src/assets/strongman.jpg",
+  };
+
   const extractedChildren =
     typeof children === "string"
       ? handleCapitalL(children.replace("_", " "))
@@ -15,7 +25,11 @@ export default function Card({ children }) {
 
   return (
     <div className="card__wrapper">
-      <img src="./src/assets/random-exercise.jpg" alt="exercise" />
+      <img
+        className="card__image"
+        src={exercises[extractedChildren]}
+        alt="exercise"
+      />
       <h2 className="card">{extractedChildren}</h2>
     </div>
   );
