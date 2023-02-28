@@ -2,13 +2,22 @@
   color: black;
   margin: 0;
   width: 100%;
+  font-size: large;
+  text-align: center;
+  user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 
   &__wrapper {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: start;
     width: calc(23% - 10px);
     transition: all 0.2s ease-in-out;
+    padding: 15px 0;
     &:hover {
       cursor: pointer;
     }

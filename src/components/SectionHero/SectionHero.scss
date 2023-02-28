@@ -10,17 +10,17 @@
 
   &__input {
     background-color: aliceblue;
-    color: teal;
+    color: var(--accent-color);
     border: none;
 
     &-button {
       color: #fff;
-      background-color: rgb(28, 37, 65);
+      background-color: var(--tertiary-color);
       border-radius: 5px;
       border: 1px solid #fff;
 
       &:hover {
-        border: 1px solid rgb(28, 37, 65);
+        border: 1px solid var(--tertiary-color);
         cursor: pointer;
       }
     }
@@ -32,17 +32,18 @@
     }
 
     &-wrapper {
-      border: 2px solid rgb(212, 234, 253);
+      border: 2px solid var(--support-color);
       display: flex;
       background-color: aliceblue;
       border-radius: 5px;
+      margin-bottom: 1rem;
     }
     &:focus {
       outline: none;
-      caret-color: cyan;
+      caret-color: var(--secondary-color);
     }
     &::placeholder {
-      color: teal;
+      color: var(--tertiary-color);
       opacity: 0.3;
     }
   }
@@ -57,20 +58,20 @@
     padding-left: 10px;
 
     &::-webkit-scrollbar {
-      width: 20px;
+      width: 5px;
     }
     &::-webkit-scrollbar-thumb {
-      background: rgb(28, 37, 65);
+      background: var(--accent-color);
       border-radius: 10px;
     }
     &::-webkit-scrollbar-track {
-      background: rgba(58, 80, 107, 0.5);
+      background: var(--support-color);
       border-radius: 10px;
     }
 
     /* Firefox */
     scrollbar-width: thin;
-    scrollbar-color: rgb(28, 37, 65) rgba(58, 80, 107, 0.5);
+    scrollbar-color: var(--accent-color) var(--support-color);
   }
 }
 
