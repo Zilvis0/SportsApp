@@ -1,11 +1,16 @@
 import React from "react";
 import "./Card.scss";
 
-export default function Card({ children }) {
+export default function Card({ setSearch, setCategory, children }) {
   const handleCapitalL = (string) => {
     let firstLetter = string[0].toUpperCase();
     let remainingLetters = string.slice(1);
     return firstLetter + remainingLetters;
+  };
+
+  const handleClickCategory = () => {
+    setCategory("type");
+    setSearch(children);
   };
 
   const exercises = {
@@ -24,7 +29,7 @@ export default function Card({ children }) {
       : children;
 
   return (
-    <div className="card__wrapper">
+    <div className="card__wrapper" onClick={handleClickCategory}>
       <img
         className="card__image"
         src={exercises[extractedChildren]}

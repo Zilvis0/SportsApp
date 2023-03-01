@@ -8,46 +8,6 @@
     padding: 100px 0;
   }
 
-  &__input {
-    background-color: aliceblue;
-    color: var(--accent-color);
-    border: none;
-
-    &-button {
-      color: #fff;
-      background-color: var(--tertiary-color);
-      border-radius: 5px;
-      border: 1px solid #fff;
-
-      &:hover {
-        border: 1px solid var(--tertiary-color);
-        cursor: pointer;
-      }
-    }
-
-    &-svg {
-      color: rgb(55, 39, 114);
-      height: auto;
-      width: 20px;
-    }
-
-    &-wrapper {
-      border: 2px solid var(--support-color);
-      display: flex;
-      background-color: aliceblue;
-      border-radius: 5px;
-      margin-bottom: 1rem;
-    }
-    &:focus {
-      outline: none;
-      caret-color: var(--secondary-color);
-    }
-    &::placeholder {
-      color: var(--tertiary-color);
-      opacity: 0.3;
-    }
-  }
-
   &__cards {
     display: flex;
     overflow: auto;
