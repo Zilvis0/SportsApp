@@ -8,7 +8,7 @@ export default function Input({ handleInputChange, inputValue, handleSearch }) {
       <input
         onChange={handleInputChange}
         className="input"
-        placeholder="Search"
+        placeholder="Search by muscle group"
         value={inputValue}
       ></input>
       <button onClick={handleSearch} className="input__button">
