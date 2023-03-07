@@ -1,0 +1,18 @@
+.exercise {
+  color: var(--secondary-color);
+  text-align: center;
+
+  &:hover {
+    color: #fff;
+  }
+
+  &__summary {
+    &:hover {
+      font-size: larger;
+    }
+  }
+
+  &__instructions {
+    color: var(--secondary-color);
+  }
+}

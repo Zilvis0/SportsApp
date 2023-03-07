@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import Card from "../Card";
 import "./SectionExercises.scss";
 
 export default function SectionExercises({ category, search }) {
@@ -23,7 +22,12 @@ export default function SectionExercises({ category, search }) {
   return (
     <div>
       {exerciseArray && exerciseArray.length > 0
-        ? exerciseArray.map((item, i) => <Card key={i}>{item.name}</Card>)
+        ? exerciseArray.map((item, i) => (
+            <details key={i} className="exercise">
+              <summary className="exercise__summary">{item.name}</summary>
+              <p className="exercise__instructions">{item.instructions}</p>
+            </details>
+          ))
         : "Sorry, the exercise you were looking for is not here. Try something else..."}
     </div>
   );
